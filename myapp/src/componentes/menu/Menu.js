@@ -9,6 +9,7 @@ function Menu(){
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><a href="badges.html">Components</a></li>
         <li><Link to="formulario">Formulario</Link></li>
+        <li><Link to="verPersonas">Ver personas</Link></li>
       </ul>
     </div>
   </nav>

@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Formulario from './componentes/formulario/Formulario';
-
+import VerPersonas from './componentes/verPersonas/VerPersonas'
 
 function App() {
 return (
@@ -18,6 +18,7 @@ return (
 		<Menu /> 
 		 	<Routes>
 				<Route path="formulario" element={<Formulario />} />		
+				<Route path="verPersonas" element={<VerPersonas />} />		
 			</Routes>	
 
 		</BrowserRouter>
