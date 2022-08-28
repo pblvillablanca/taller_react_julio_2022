@@ -9,19 +9,24 @@ import {
 
 import Formulario from './componentes/formulario/Formulario';
 import VerPersonas from './componentes/verPersonas/VerPersonas'
+import EditarPersona from './componentes/editarPersona/EditarPersona';
+import AppContext from './context/AppContext';
 
 function App() {
 return (
     <div className="App">
-   		<BrowserRouter>
+		<AppContext>
+			<BrowserRouter>
 
-		<Menu /> 
-		 	<Routes>
-				<Route path="formulario" element={<Formulario />} />		
-				<Route path="verPersonas" element={<VerPersonas />} />		
-			</Routes>	
+				<Menu /> 
+				<Routes>
+					<Route path="formulario" element={<Formulario />} />		
+					<Route path="verPersonas" element={<VerPersonas />} />
+					<Route path="editarPersona/:idPersona" element={<EditarPersona /> } />
+				</Routes>	
 
-		</BrowserRouter>
+			</BrowserRouter>
+		</AppContext>
 	</div>
   );
 }

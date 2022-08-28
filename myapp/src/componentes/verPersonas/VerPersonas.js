@@ -22,7 +22,6 @@ const VerPersonas = ()=>{
 			
 		<div className="container">
 			<h4>Personas registradas</h4>
-
 			{
 				personas.map(p=><ItemPersona key={p._id} persona={p} />)
 			}
